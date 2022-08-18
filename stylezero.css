@@ -1,7 +1,7 @@
 /* import url poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins');
 :root {
-    --main: #0000ff; /* #0000ff for blue */
+    --main: #ff4040; /* #0000ff for blue */
 }
 
 /* Start Global */
@@ -62,17 +62,8 @@ img.book-logo {
 }
 
 a {
-    color:rgb(0, 0, 0);
-}
-
-a:link, a:visited {
-    color: var(--main);
     text-decoration: none;
-    cursor: pointer;
-}
-
-a:link:active, a:visited:active {
-    color: (internal value);
+    color: black;
 }
 
 .navbar .links li {
