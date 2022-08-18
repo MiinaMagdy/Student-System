@@ -1,0 +1,131 @@
+/* import url poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+:root {
+    --main: #4f8297; /* #0000ff for blue */
+    --dark-white: #f3f1ea; 
+    --background: #f9f9f9;
+}
+
+/* Start Global */
+
+body {
+    background-color: var(--background);
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins";
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* End Global */
+
+/* Start NavBar */
+
+
+.navbar{
+    background-color: var(--dark-white);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+    line-height: 30px;
+}
+
+.navbar .brand {
+    float: left;
+    width: 78%;
+    text-transform: uppercase;
+    height: 10%;
+}
+
+img.book-logo {
+    display: inline-block;
+    position: relative;
+    padding-right: 10px;
+    top: 10px;
+    width: 55px;
+}
+
+.brand-text {
+    letter-spacing: 1px;
+    display: inline-block;
+    font-size: 30px;
+}
+
+.navbar .links {
+    float: left;
+    width: 22%;
+    margin-top: 15px;
+    text-transform: capitalize;
+}
+
+a {
+    color:rgb(0, 0, 0);
+}
+
+a:link, a:visited {
+    color: var(--main);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:link:active, a:visited:active {
+    color: (internal value);
+}
+
+.navbar .links li {
+    display: inline-block;
+    padding: 10px 15px;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar .links li.active,
+.navbar .links li:hover {
+    color: var(--main);
+    border-bottom: 2px solid var(--main);
+}
+
+/* End NavBar */
+
+/* Start button */
+
+.btn{
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-dark {
+    background-color: var(--main);
+    color: #F9F9F9;
+}
+
+.btn-white{
+    color: var(--main);
+    background-color: #f9f9f9;
+}
+
+
+/* End button */
+
+/* Start My Framework */
+
+.clearfix {
+    clear: both;
+}
+
+/* End My Framework */
