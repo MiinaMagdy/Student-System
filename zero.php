@@ -18,9 +18,9 @@
                 <h2 class="brand-text">student system</h2>
             </div>
             <ul class="links">
-                <li class="active"><a href="#">home</a></li>
-                <li><a href="#">log in</a></li>
-                <li><a href="#">sign up</a></li>
+                <a href="#"><li class="active">home</li></a>
+                <a href="#"><li>log in</li></a>
+                <a href="#"><li>sign up</li></a>
             </ul>
             <div class="clearfix"></div>
         </div>
