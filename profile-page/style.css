@@ -96,12 +96,12 @@
     grid-template-columns: 40px auto;
 }
 
-.btn{
-    width: 35% !important;
+.profilePtn{
+    width: 35%;
     margin-top: 4%;
 }
 
-.btn:hover{
+.profilePtn:hover{
     background-color: #629bb3;;
 }
 
