@@ -77,11 +77,11 @@
         <p>Student table</p>
     </div>
 
-    <div id="Edit-student-table" class="tabcontent">
+    <div id="Edit-student-table" class="tabcontent" style="display:none">
         <p>Edit Student table</p> 
     </div>
 
-    <div id="reqests" class="tabcontent">
+    <div id="reqests" class="tabcontent" style="display:none">
         <p>Reqests</p>
     </div>
     
