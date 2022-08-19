@@ -17,6 +17,11 @@ body {
     margin: auto;
 }
 
+.welcome{
+    transition: all .3s ease-in-out;
+    margin-left: 40px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
