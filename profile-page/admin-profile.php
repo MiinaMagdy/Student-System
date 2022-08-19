@@ -63,7 +63,7 @@
                 <div class="align"> 01023839812 </div> 
             </ul>
 
-            <button class="profilePtn btn btn-dark"> Edit profile </button>
+            <button class="profileBtn btn btn-dark"> Edit profile </button>
         </div>
     </div>
 
