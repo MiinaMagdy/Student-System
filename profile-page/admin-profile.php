@@ -71,16 +71,12 @@
     <!-- --------------- start tabs --------------- -->
 
     <div class="tab">
-        <button class="tablinks tab-border" onclick="openTabs(event, 'Student-table')"> Student table </button>
-        <button class="tablinks" onclick="openTabs(event, 'Edit-student-table')"> Edit student table </button>
+        <button class="tablinks tab-border" onclick="openTabs(event, 'Edit-student-table')"> Edit student table </button>
         <button class="tablinks" onclick="openTabs(event, 'reqests')"> Reqests </button>
     </div>
 
-    <div id="Student-table" class="tabcontent">
-        <p>Student table</p>
-    </div>
 
-    <div id="Edit-student-table" class="tabcontent" style="display:none">
+    <div id="Edit-student-table" class="tabcontent">
         <?php include 'manage-students.php'; ?>
     </div>
 
