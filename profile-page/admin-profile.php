@@ -81,11 +81,11 @@
     </div>
 
     <div id="Edit-student-table" class="tabcontent" style="display:none">
-        <p>Edit Student table</p> 
+        <?php include 'manage-students.php'; ?>
     </div>
 
     <div id="reqests" class="tabcontent" style="display:none">
-        <p>Reqests</p>
+        <?php include 'requests.php'; ?>
     </div>
     
     <!-- --------------- End tabs --------------- -->
