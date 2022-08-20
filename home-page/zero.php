@@ -14,7 +14,7 @@
     <div class="navbar">
         <div class="container">
             <div class="brand">
-                <img class="book-logo" src="/book2.png" alt="book">
+                <img class="book-logo" src="../book2.png" alt="book">
                 <h2 class="brand-text">student system</h2>
             </div>
             <ul class="links">
