@@ -80,7 +80,7 @@
         <?php include 'manage-students.php'; ?>
     </div>
 
-    <div id="reqests" class="tabcontent" style="display:none">
+    <div id="requests" class="tabcontent" style="display:none">
         <?php include 'requests.php'; ?>
     </div>
     
