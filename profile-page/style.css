@@ -114,7 +114,7 @@
 
     align-items: center;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
 }
 
 .tabcontent {
