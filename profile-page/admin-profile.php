@@ -72,7 +72,7 @@
 
     <div class="tab">
         <button class="tablinks tab-border" onclick="openTabs(event, 'Edit-student-table')"> Edit student table </button>
-        <button class="tablinks" onclick="openTabs(event, 'reqests')"> Reqests </button>
+        <button class="tablinks" onclick="openTabs(event, 'requests')"> Requests </button>
     </div>
 
 
