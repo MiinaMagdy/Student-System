@@ -9,7 +9,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="student_profile.css">
+    <link rel="stylesheet" href="student_profile1.css">
     <title>Student_Profile1</title>
 </head>
 
