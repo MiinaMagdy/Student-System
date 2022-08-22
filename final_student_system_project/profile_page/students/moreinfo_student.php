@@ -36,7 +36,7 @@
                 <h2 class="brand-text">Student System</h2>
             </div>
             <ul class="links">
-                <a href="student_logout.php">
+                <a href="logout.php">
                     <li class="active" >home</li>
                 </a>
                 <div class="dropdown">
@@ -44,7 +44,7 @@
                     <div class="content">
                         <a href="student.php"> Your profile </a>
                         <a href="edit_student.php"> settings </a>
-                        <a href="student_logout.php"> sign out</a>
+                        <a href="logout.php"> sign out</a>
                     </div>
                 </div>
             </ul>

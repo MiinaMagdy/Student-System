@@ -40,7 +40,7 @@
         
         <div id="signUp" class="sign-up">
             <h2>Sign Up</h2>
-            <form action="connect.php" method="POST" enctype="multipart/form-data">
+            <form action="signup_connect.php" method="POST" enctype="multipart/form-data">
                 <div id="firstSign">
 
                     <div class="nuser-box">
@@ -75,7 +75,7 @@
                      
 
                     <div class="nuser-box">
-                        <input name="address" type="text" name="" placeholder="Ismallia Elgish-st">
+                        <input name="address" type="text" name="" required placeholder="Ismallia Elgish-st">
                         <label>Address</label>
                     </div>
 
@@ -95,7 +95,7 @@
             <form method="POST" action="login_connect.php">
                 <div id="firstSign">
                     <?php
-                        echo (isset($_GET['connection_state']) ? '<span style="color: red;">Incorrect email or password</span>' : '');
+                        echo (isset($_GET['error']) ? '<span style="color: red;">' . $_GET['error'] . '</span>' : '');
                     ?>
                     <div class="nuser-box">
                         <input name="email" type="text" name="" required="" >
@@ -115,7 +115,7 @@
     <!-- --------------- End button --------------- -->
     <script src="assets/js/index.js"></script>
     <?php
-        echo (isset($_GET['connection_state']) ? '<script>toLogin();</script>' : '');
+        echo (isset($_GET['error']) ? '<script>toLogin();</script>' : '');
     ?>
 </body>
 </html>

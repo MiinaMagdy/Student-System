@@ -1,73 +1,76 @@
 <?php
-    include"image.php";
+    $conn=mysqli_connect('localhost','root','');
+    $db=mysqli_select_db($conn,'web_skills'); 
+
+    if(!$conn){
+        die("Error: Failed to connect to database!");
+    }
+    session_start();
+    if (isset($_SESSION['user_id'])) {
+        $id = $_SESSION['user_id'];
+        $sql="SELECT * FROM admins WHERE id='".$id."'";
+        $result= mysqli_query($conn,$sql);  
+        $RowData=mysqli_fetch_assoc($result);
+    }
+    else{
+        header('Location: ../../home_page/index.php');
+    }
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> profile </title>
     
-    <link rel="stylesheet" href="../home-page/stylezero.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-    <script src="scripts.js"></script>
-</head>
-
-<body>
-
-    <!-- --------------- Start Navigation Bar --------------- -->
-
-    <div class="navbar">
-        <div class="container">
-            <div class="brand">
-                <img class="university-logo" src="../university.png" alt="university">
-                <h2 class="brand-text"> student system</h2>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Student Profile</title>
+    </head>
+    
+    <body class="profile-page">
+        
+        <div class="navbar">
+            <div class="container">
+                <div class="brand">
+                    <img class="logo" src="https://cdn-icons-png.flaticon.com/512/327/327131.png" alt="university">
+                <h2 class="brand-text">Student System</h2>
             </div>
-
             <ul class="links">
-                <li class="active"><a href="../home-page/zero.php"> home </a></li>
-
+                <a href="logout.php">
+                    <li class="active" >home</li>
+                </a>
                 <div class="dropdown">
-                    <img class="img-profile" src='<?=$target_dir?>' alt="profile">
-                    <i class="fa fa-caret-down"></i>
-
+                    <img class="img-profile" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9G0Vljlks1FAL2ugPhUWzLs4zEZPBLf9Ffg&usqp=CAU" alt="profile">
                     <div class="content">
-                        <a href="admin-profile.php"> Your profile </a>
-                        <a href="#"> settings </a>
-                        <a href="#"> sign out</a>
+                        <a href="<?= $_SERVER['PHP_SELF'] ?>"> Your profile </a>
+                        <a href="edit_student.php"> settings </a>
+                        <a href="logout.php"> sign out</a>
                     </div>
-
                 </div>
             </ul>
-            
             <div class="clearfix"></div>
         </div>
     </div>
+    
 
-    <!-- --------------- End Navigation Bar --------------- -->
-
-
-    <!-- --------------- start profile body --------------- -->
-
-    <div class="grid-container">
-        <div style="margin: 0 auto;">
-            <img src='<?=$target_dir?>' alt="profile" class="account-pic">
+ <div class="grid-container">
+        <div class="account-pic">
+        <?php  echo "<div><img src='assets/images/".$RowData['image_path']."' class='account-pic'></div>";?>
         </div>
         <div>
-            <h1> Lama Salah Ahmed </h1> 
+            <h1> <?php
+              echo $RowData['name'];
+             ?></h1>
             <ul class="del">
-                <li> <img src = "pictures/mail.png" , alt="mail" class="details"> </li>
-                <div class="align"> lamasalah32@gmail.com </div>
-                <li><img src = "pictures/phone.png" , alt="phone" class="details"> </li>
-                <div class="align"> 01023839812 </div> 
+                <li> <img src = "assets/images/mail.png" class="details"> </li>
+                <div class="align"> <?php echo $RowData['email'];?></div>
+                <li><img src = "assets/images/phone.png"   class="details"> </li>
+                <div class="align"> <?php echo $RowData['phone'];?> </div> 
+                
             </ul>
 
             <a href="editProfile.php"><button class="profileBtn btn btn-dark"> Edit profile </button></a>
+          
         </div>
     </div>
 
@@ -89,6 +92,8 @@
     </div>
     
     <!-- --------------- End tabs --------------- -->
+    <script src="assets/js/scripts.js"></script>
 
 </body>
 </html>
+

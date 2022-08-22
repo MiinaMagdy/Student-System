@@ -15,8 +15,15 @@
             if(mysqli_num_rows($query1)==1)
             {
                 $row = mysqli_fetch_assoc($query1);
+                if ($row['is_active'] == 0) {
+                    ?>
+                        <script>
+                            window.location.href = "index.php?error=Your account is not active yet.";
+                        </script>
+                    <?php
+                    exit();
+                }
                 session_start();
-
                 $_SESSION['user_id'] = $row['id'];
                 header('Location: http://localhost/final_student_system_project/profile_page/students/student.php');
             }
@@ -31,7 +38,7 @@
             else{
                 ?>
                     <script>
-                        window.location.href = "index.php?connection_state=1";
+                        window.location.href = "index.php?error=email or password is incorrect.";
                     </script>
                 <?php
             }
