@@ -43,13 +43,13 @@
             $file_name = $_FILES['upload']['name'];
             $file_size = $_FILES['upload']['size'];
             $file_tmp = $_FILES['upload']['tmp_name'];
-            $target_dir = "profile_images/${file_name}";
 
             $file_ext = explode('.', $file_name);
             $file_ext = strtolower(end($file_ext));
 
             if(in_array($file_ext, $allowed_ext)) {
                 if($file_size <= 1000000) {
+                    $target_dir = "profile_images/${file_name}";
                     move_uploaded_file($file_tmp, $target_dir);
                     $oldFile = "profile_images/${image}";
                     unlink($oldFile);
