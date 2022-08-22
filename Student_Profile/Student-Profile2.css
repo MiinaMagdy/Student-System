@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+:root {
+    --main: #4f8297; 
+    --dropdown: #e3e8ea;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins";
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+ 
+
+.img-profile {
+    display: inline-block;
+    position: relative;
+    top: 12px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 18px;
+    cursor: pointer;
+}
+.content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    padding: 12px 0px;
+    min-width: 120px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+    
+.content a {
+    color: black;
+    padding: 8px 8px;
+    font-size: 10px;
+    text-decoration: none;
+    display: block;
+}
+    
+.content a:hover {
+    background-color: var(--dropdown)
+}
+    
+.dropdown:hover .content {display: block;}
+  
+.fa-caret-down{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+}
+/* Start NavBar */
+
+
+.navbar{
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+    line-height: 30px;
+}
+
+.navbar .brand {
+    float: left;
+    width: 70%;
+    text-transform: uppercase;
+    height: 10%;
+}
+
+img.logo {
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    width: 50px;
+}
+
+.brand-text {
+    letter-spacing: 1px;
+    display: inline-block;
+    font-size: 30px;
+}
+
+.navbar .links {
+    float: left;
+    width: 30%;
+    margin-top: 15px;
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar .links li {
+    display: inline-block;
+    padding: 10px 15px;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar .links li.active,
+.navbar .links li:hover {
+    color: var(--main);
+    border-bottom: 2px solid var(--main);
+}
+
+/* End NavBar */
+
+.clearfix {
+    clear: both;
+}
+
+
+/*  Start of profile student  */
+
+/*  start Info*/
+table 
+{
+    width: 900px;
+    height: 560px;
+    box-shadow: 0 0 5px 0px #4f8297;
+    padding-left: 100px;
+    
+}
+
+
+  .grid-container {
+   
+    align-items: center;
+    height: 500px;
+    box-shadow: 0 0 5px 0px #4f8297;
+    grid-template-columns: 200px 200px;
+    grid-gap: 5px;
+    padding: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+    float:left;
+    width:400px;
+
+}
+
+
+.account-pic{
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 5px 0px black;
+    margin: 0 auto ;
+
+}
+
+.details{
+    width: 25px;
+    margin-top: 10px;
+}
+
+.del{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 40px auto;
+    padding-left: 50px;
+}
+
+.profileBtn{
+    margin-top: 5%;
+    width: 130px;
+    box-shadow: 0 0 5px #4f8297; 
+    border-radius: 10px;
+    font-size:15px;
+    border:none;
+    height: 30px;
+    width: 130px;
+}
+
+.profileBtn:hover{
+    background-color: #629bb3;;
+    cursor: pointer;
+}
+ 
+.dividepage
+{
+    display: inline;
+}
+
+
+.prof-name
+{
+   padding-top: 15px;
+   padding-left: 30%;
+   padding-right:30%;
+   
+}
+.align
+{
+    padding:20px;
+}
+/*  end Info */
+
+/* start tab */
+
+.tab{
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 600px;
+    
+}
+
+
+.tablinks{
+    background-color: var(--dark-white);
+    padding-top: 10px;
+    padding-left: 24px;
+    padding-bottom: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 200px;
+}
+
+.tablinks:hover{
+    background-color: #4f8297;
+}
+
+
+
+
+/* End tab */
+
+/* End of student profile*/
