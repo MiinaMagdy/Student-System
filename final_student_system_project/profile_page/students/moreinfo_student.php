@@ -58,7 +58,7 @@
     <div class="container">
          <div class="grid-container">
                 <div class="account-pic">
-                <?php  echo "<div ><img src='assets/images/".$RowData['image_path']."' class='account-pic'></div>";?>
+                <?php  echo "<div ><img src='".$RowData['image_path']."' class='account-pic'></div>";?>
                 </div>
                 
                     <h1 class="prof-name"> <?php
