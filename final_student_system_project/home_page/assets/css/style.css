@@ -51,6 +51,7 @@ img.university-logo {
     padding-right: 10px;
     top: 10px;
     width: 55px;
+    left: 7px;
 }
 
 .brand-text {
@@ -99,7 +100,7 @@ a:link:active, a:visited:active {
 .btn{
     margin-left: auto;
     margin-right: auto;
-    width: 10%;
+    width: 130px;
     padding: 10px;
     border: none;
     border-radius: 20px;
