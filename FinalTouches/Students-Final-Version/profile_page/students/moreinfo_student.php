@@ -56,7 +56,7 @@
 
 
       <!---------------- Start Info----------------->
-    <div class="container">
+    <div class="container gridtable">
          <div class="grid-container" class="new-flex">
                 <div class="account-pic">
                 <img src='<?=$target_dir?>' class="account-pic">
