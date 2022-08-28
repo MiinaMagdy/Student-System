@@ -56,10 +56,10 @@
                         <br>
 
                         <input id="radio1" name="gender" type="radio" value="Male" style="margin-left:100px" />
-                        <label id="Male" style="color:#F9F9F9; padding-right:25px;">Male</label>
+                        <label id="Male" for="radio1" style="color:#F9F9F9; padding-right:25px;">Male</label>
                         
                         <input id="radio2" name="gender" type="radio" value="Female" />
-                        <label id="Female" style="color :#F9F9F9; padding-right:25px;">Female</label>
+                        <label id="Female" for="radio2" style="color :#F9F9F9; padding-right:25px;">Female</label>
 
                     </div>
 
