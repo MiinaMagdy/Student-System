@@ -18,6 +18,8 @@ body {
     max-width: 1200px;
     margin: auto;
     display: block;
+/*    padding: left;*/
+    
 }
 
 ul {
@@ -46,6 +48,7 @@ ul {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
+    margin: left;
     padding: 12px 0px;
     min-width: 120px;
     border-radius: 8px;
@@ -139,11 +142,36 @@ a {
 /*  start Info*/
 table 
 {
-    width: 66%;
-    height: 535px;
-    margin: auto;
+    width: 100%;
+    height: 500px;
+/*    margin: -300px;*/
+    margin-left: 100px;
+/*    padding: up;*/
     box-shadow: 0 0 5px 0px #4f8297;
+
 }
+
+.grid-container {
+    align-items: center;
+    height: auto;
+/*    box-shadow: 0 0 5px 0px #4f8297;*/
+    grid-template-columns: 200px 200px;
+    grid-gap: 5px;
+    padding: 20px;
+    /* margin-left: 60px; */    margin-right: 60px;
+    float:center;
+    width: 15%;
+     
+
+}
+.gridtable{
+    
+    display: flex;
+    flex-direction:row; 
+    
+    
+}
+
 
 div.new-flex{
     width: 500px;
