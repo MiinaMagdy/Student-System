@@ -1,0 +1,211 @@
+:root {
+    --main: #4f8297; /* #0000ff for blue */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.choosebtn{
+    text-align: center; 
+    width: 100px;
+    margin-bottom: 3px;
+    display: inline-block;
+    background-color: var(--main);
+    box-shadow: 0 0 5px 0px rgb(255, 255, 255);
+    color: white;
+    padding: 0.5rem;
+    font-family: sans-serif;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    
+}
+
+.dropdown-content {
+    border:none;
+    background: none;
+    visibility: hidden;
+    position: absolute;
+    left: 180px;
+    top: 40px;
+    width: 102px;
+    overflow: auto;
+}
+
+.bluebtn:hover{
+    background-color: #375a69;
+}
+
+.redbtn{
+    background-color: rgb(255, 98, 98);
+}
+
+.redbtn:hover{
+    background-color: rgb(253, 54, 54);
+}
+
+
+  
+.show {
+    display: block;
+    visibility: visible;
+}
+
+
+.container1{
+    width: 50%;
+    padding-top: 80px;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    color: #3d6372;
+    font-size: 30px;
+}
+
+.border{
+    margin: 2%;
+    border-bottom: 2px solid var(--main);
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+   
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-gap: 150px;
+}
+
+.column-flex {
+    display: flex;
+    flex-direction: column;   
+}
+
+.update {
+    width: 100%;
+    height: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: inline-block;
+    box-shadow: 2px 2px 8px rgb(230, 230, 230);
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.update-student-btn {
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+.btn{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-dark {
+    background-color: var(--main);
+    color: #F9F9F9;
+}
+
+.btn_white{
+    width: 150px;
+    padding: 5px;
+    margin-left: 28px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    color:  var(--main);
+}
+
+.btn_white:hover{
+    background-color: rgb(243, 243, 243);
+}
+
+.btn-dark:hover{
+    background-color: #375a69;
+}
+.account-pic{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 5px 0px black;
+}
+
+.message{
+    color: rgb(239, 123, 123);
+    font-weight: 600;
+    font-size: 15px;
+    padding-left: 33px;
+    position: absolute;
+    top: 280px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {    
+    text-align: center;
+    cursor: pointer;
+}
+
+.profile-picture{
+    justify-content: center;
+    align-items: center;
+}
+
+.edit{
+    width: 500px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+    border: 0;
+    position: absolute;
+    border-radius: 50%;
+    left: 150px;
+    cursor: pointer;
+    opacity: 0.85;
+}
+
+.edit:hover{
+    background-color: rgb(247, 247, 247);
+    opacity: 1;
+
+}
+
+.picUpdate{
+    position: relative;
+}
+
+.pic{
+    width: 20px;
+}
+
+.circle{
+    width: 50px; ;
+}
+
