@@ -2,8 +2,8 @@
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Aug 22, 2022 at 06:12 PM
+-- Host: 127.0.0.1
+-- Generation Time: Aug 28, 2022 at 07:28 PM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -44,9 +44,9 @@ CREATE TABLE `admins` (
 --
 
 INSERT INTO `admins` (`id`, `name`, `phone`, `image_path`, `birth_date`, `gender`, `address`, `email`, `password`) VALUES
-(1, 'Fawzy', '+20 120 352 2497', 'assets/images/account.png', '1998-08-20', 'Male', 'Egypt', 'fawzy@admin.com', 'admin'),
-(2, 'Tarneem', '+20 121 211 6868', 'assets/images/account.png', '1993-08-11', 'Female', 'Egypt', 'Tarneem@admin.com', 'admin'),
-(3, 'Haidi', '+20 127 334 8687', 'assets/images/account.png', '1994-08-11', 'Female', 'Egypt', 'Haidi@admin.com', 'admin');
+(1, 'Dr Fawzy', '+20 121 211 6868', '', '1998-08-20', 'Male', 'Egypt', 'fawzy@admin.com', 'admin'),
+(2, 'Tarneem', '+20 121 211 6868', '', '1993-08-11', 'Female', 'Egypt', 'Tarneem@admin.com', 'admin'),
+(3, 'Haidi', '+20 127 334 8687', '', '1994-08-11', 'Female', 'Egypt', 'Haidi@admin.com', 'admin');
 
 --
 -- Indexes for dumped tables
