@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+:root {
+    --main: #4f8297; 
+    --dark-white: #f3f1ea;
+    --dropdown: #e3e8ea;
+    --background: #f9f9f9;
+}
+
+
+body {
+    background-color: var(--background);
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins";
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    display: block;
+/*    padding: left;*/
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+ 
+
+.img-profile {
+    display: inline-block;
+    position: relative;
+    top: 14px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 18px;
+    cursor: pointer;
+}
+.content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    margin: left;
+    padding: 12px 0px;
+    min-width: 120px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+    
+.content a {
+    color: black;
+    padding: 8px 8px;
+    font-size: 10px;
+    text-decoration: none;
+    display: block;
+}
+    
+.content a:hover {
+    background-color: var(--dropdown)
+}
+    
+.dropdown:hover .content {display: block;}
+  
+.fa-caret-down{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+}
+/* Start NavBar */
+
+
+.navbar{
+    background-color: var(--dark-white);
+    box-shadow: 0px 2px 8px rgb(0 0 0 / 50%);
+    margin-bottom: 50px;
+    line-height: 30px;
+}
+
+.navbar .brand {
+    float: left;
+    width: 88%;
+    text-transform: uppercase;
+    height: 10%;
+}
+
+img.logo {
+    display: inline-block;
+    position: relative;
+    padding-right: 10px;
+    top: 10px;
+    width: 55px;
+    left: 7px;
+}
+
+.brand-text {
+    letter-spacing: 1px;
+    display: inline-block;
+    font-size: 30px;
+}
+
+.navbar .links {
+    float: left;
+    width: 12%;
+    margin-top: 15px;
+    text-transform: capitalize;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar .links li {
+    display: inline-block;
+    padding: 10px 15px;
+    border-bottom: 2px solid transparent;
+}
+
+li{
+    padding-left: 15px;;
+}
+.navbar .links li.active,
+.navbar .links li:hover {
+    color: var(--main);
+    border-bottom: 2px solid var(--main);
+}
+/* End NavBar */
+
+.clearfix {
+    clear: both;
+}
+
+
+/*  Start of profile student  */
+
+/*  start Info*/
+table 
+{
+    width: 100%;
+    height: 500px;
+/*    margin: -300px;*/
+    margin-left: 100px;
+/*    padding: up;*/
+    box-shadow: 0 0 5px 0px #4f8297;
+
+}
+
+.grid-container {
+    align-items: center;
+    margin-top: 70px;
+/*    box-shadow: 0 0 5px 0px #4f8297;*/
+    grid-template-columns: auto auto;
+    padding: 20px;
+    /* margin-left: 60px; */ 
+    float:center;
+    width: 40px;
+     
+}
+
+.gridtable{
+    display: flex;
+    flex-direction:row; 
+}
+
+
+div.new-flex{
+    width: 500px;
+    height: 150px;
+    float: left;
+    margin: 20px;
+    
+    padding: 50px 20%;
+}
+
+.account-pic{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 5px 0px black;
+    margin: 0 auto ;
+
+}
+
+.details{
+    width: 25px;
+    margin-top: 10px;
+}
+
+.del{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 40px auto;
+    margin-top: -10px;
+}
+
+.profileBtn{
+    margin-top: 5%;
+    width: 130px;
+    box-shadow: 0 0 5px #4f8297; 
+    border-radius: 10px;
+    font-size:15px;
+    border:none;
+    height: 30px;
+    width: 130px;
+}
+
+.profileBtn:hover{
+    background-color: #629bb3;;
+    cursor: pointer;
+}
+ 
+.dividepage{
+    display: inline;
+}
+
+
+.prof-name
+{
+    display: inline-block;
+    width: 400px;
+    font-size: 40px;
+    margin-left: 10px;;
+   
+}
+.align
+{
+    padding:20px;
+}
+/*  end Info */
+
+/* start tab */
+
+.tab{
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 600px;
+    
+}
+
+
+.tablinks{
+    background-color: var(--dark-white);
+    padding-top: 10px;
+    padding-left: 24px;
+    padding-bottom: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 200px;
+}
+
+.tablinks:hover{
+    background-color: #4f8297;
+}
+
+
+
+
+/* End tab */
+
+/* End of student profile*/
