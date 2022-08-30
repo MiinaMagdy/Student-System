@@ -7,4 +7,4 @@ This our traning project "Student System site" made using:
 Project Contributors: Peter Joseph, Mina Magdy, Eman Mohammed, Lama Salah and Fatma Refaat.
 
                                                          29 - 8 - 2022 ❤️
-You can view the site by clickin [Here](http://studentsystem.freecluster.eu/index.php) .
+You can view the site by clicking [Here](http://studentsystem.freecluster.eu/index.php) .
